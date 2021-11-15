@@ -1,0 +1,505 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+.offer-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3%;
+}
+.offer-text h1{
+    font-family: 'Heebo', sans-serif;
+    color: #183557 ;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.before-offer:before{
+    content: " ";
+    display: block;
+    background: yellow;
+    width: 45px;
+    height: 5.5px;
+    margin: auto;
+margin-bottom: 5px;
+}
+.second-section{
+background: #f4f8fa;
+
+}
+.audi-section{
+    background: #f4f8fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70%;
+    margin: auto;
+    padding: 3%;
+}
+.audi-heading{
+    display: flex;
+    flex-direction: row;
+}
+.audi-img >img{
+    max-width: 160px;
+}
+.audi-text{
+    display: flex;
+    flex-direction: column;
+  
+}
+.audi-text h2{
+    font-size: 1.2rem;
+    color: #183557 ;
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 3%;
+}
+.audi-text h5{
+    font-size: 1rem;
+    color: #0d4585;
+    font-family: 'Dosis', sans-serif;
+    
+}
+.audi-text p{
+    font-size: 1rem;
+    color: grey;
+    font-family: 'Dosis', sans-serif;
+    margin-top: 3%;
+}
+/* ======= ACCORDIN =======  */
+.audi-accordin{
+    margin-top: 5%;
+}
+.accordin{
+   background-color: #01609e;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin: 0.5px;
+}
+.active, .accordion:hover {
+    background-color: #01609e;
+  }
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  
+  .panel{
+    padding: 0 18px;
+    background-color: #f4f8fa;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .panel-body{
+      padding: 1.5% 0% 1.5% 0.5%;
+  }
+  hr{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+.input-section{
+    display: flex;
+    flex-direction: column;
+}
+.inp-txt{
+    border: 1px solid rgb(221, 208, 208);
+    border-radius: 3px;
+    width: 260px;
+    height: 50px;
+    margin-bottom: 10px;
+   
+}
+.input-section >::placeholder{
+    color: rgb(126, 119, 119);
+  padding: 5%;
+  font-weight: 600;
+}
+.colr{
+    font-size: 1rem;
+    color: #183557;
+}
+/* ----- custom checkboxes ------  */
+.colors-sec{
+    padding-left: 3%;
+    padding-top: 2%;
+    display: inline-block;
+}
+.colors-sec >label{
+  width: 160px;
+
+}
+.colors-sec{
+  text-align: center;
+}
+.container1 {
+    margin: 17px; 
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(170, 159, 159);
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container1:hover input ~ .checkmark {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container1 input:checked ~ .checkmark {
+    background-color: #000000;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container1 input:checked ~ .checkmark:after {
+    display: block;
+
+  }
+  
+  /* Style the checkmark/indicator */
+  .container1 .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: 3px solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #white-checkbox::after{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: 3px solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  #beige-checkbox:after{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: 3px solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* ---------custom checkboxes end -----------  */
+  .trans h5{
+    font-size: 1rem;
+    color: #183557;
+}
+.driv h5{
+    font-size: 1rem;
+    color: #183557;
+}
+.eng h5{
+    font-size: 1rem;
+    color: #183557;
+}
+.fa-check-circle{
+    color: rgb(55, 196, 55);
+}
+.butn-txt{
+    width: 12rem;
+    height: 2.5rem;
+    background-color: #04add9;
+    border: none;
+    color: white;
+    border-radius: 3px;
+  }
+
+  .container00 {
+
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(170, 159, 159);
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container00 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark00 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgb(206, 199, 199);
+    border-radius: 3px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container00:hover input ~ .checkmark00 {
+    background-color: rgb(231, 225, 225);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container00 input:checked ~ .checkmark00{
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark00:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container00 input:checked ~ .checkmark00:after {
+    display: block;
+  
+  }
+  
+  /* Style the checkmark/indicator */
+  .container00 .checkmark00:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: 3px solid rgb(47, 44, 255);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* ------ feature checkox end ----  */
+  .premium-f{
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .premium-f h1{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  }
+  .safety{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5%;
+    padding: 1%;
+  }
+  .safety h4{
+    font-size: 1rem;
+    padding-top: 1%;
+    margin-bottom: 20px;
+  }
+  .seats h4{
+    font-size: 1rem;
+    padding-top: 1%;
+    margin-bottom: 20px;
+  }
+  .seats{
+    margin: 0.5%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+  }
+  .premium-feat{
+    display: flex;
+    flex-direction: row;
+    gap: 22.5%;
+    
+  }
+  .ent-wheel{
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+    
+  }
+/* --------custom radio butns ----  */
+.radio-group{
+display: inline-flex;
+overflow: hidden;
+
+}
+.radio-input{
+    display: none;
+}
+.radio-label{
+    padding: 10px 110px ;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #183557 ;
+    background: white;
+    cursor: pointer;
+    transition: background 0.1s;
+    text-align: center;
+    
+}
+#radio-label-middle{
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid rgb(221, 208, 208);
+    border-bottom: 1px solid rgb(221, 208, 208);
+}
+.radio-label{
+    border: 1px solid rgb(221, 208, 208);
+}
+.radio-input:checked + .radio-label{
+background: #01609e;
+color: white;
+border:#01609e ;
+}
+/* ------ custom radiobtn end--------  */
+.condition-head h5{
+margin-bottom: 15px;
+margin-top: 15px;
+color: #183557;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ----- media queires -------  */
+@media (max-width:425px){
+    .colors-sec >label {
+        width: 45px;
+    }
+    .audi-section {
+        background: #f4f8fa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 114%;
+        margin: auto;
+        padding: 1%;
+    }
+    .audi-text h2 {
+        font-size: 1.1rem;
+    }
+    .audi-text h5 {
+        font-size: 0.9rem;
+    }
+    .audi-text p {
+        font-size: 0.9rem;
+    }
+    .audi-img >img {
+        max-width: 110px;
+    }
+    .panel-body {
+        padding-top: 5%;
+        padding-bottom: 1%;
+        margin-bottom: 20px;
+    }
+    .colors-sec{
+        padding: 0;
+    }
+    .premium-f h1 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        margin-top: 12px;
+    }
+    .container00 {
+        margin-bottom: 20px;
+        font-size: 0.8rem;
+    }
+    .safety h4 {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    .seats h4 {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    .ent-wheel {
+        gap: 2%;
+    }
+    .premium-feat {
+        gap: 24%;
+    }
+   
+    }
+
